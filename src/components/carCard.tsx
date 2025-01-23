@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 export default function CarCard({ carImage, carName, carPrice, carReviews }:any) {
   return (
     <div className="border rounded-lg shadow-md p-4 text-center">
-      <img
+      <Image
         src={carImage}
         alt={carName}
         className="w-full h-32 object-cover rounded-t-lg"
